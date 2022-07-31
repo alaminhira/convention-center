@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
 :root {
     --color-prim: #3F87F5;
     --color-sec: #231D4F;
@@ -138,4 +143,22 @@ body {
 
 .package-badge {
     font-size: .9375rem;
+}
+
+/* FAQ */
+.accordion-button:not(.collapsed) {
+    color: initial;
+    opacity: .7;
+}
+
+.accordion-body {
+    color: var(--color-text);
+}
+
+/* Footer */
+.footer {
+    color: rgba(255, 255, 255, .8)
+}
+.footer-app img {
+    width: 7rem;
 }
