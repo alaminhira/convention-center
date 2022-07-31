@@ -8,7 +8,9 @@
 
 :root {
     --color-prim: #3F87F5;
-    --color-text: #1d1d1d;
+    --color-sec: #231D4F;
+    --color-dark: #1d1d1d;
+    --color-text: #6C6C6C;
     --color-light: #fff;
 }
 
@@ -17,6 +19,7 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.7;
+    color: var(--color-text);
 }
 
 .btn {
@@ -39,13 +42,19 @@ body {
     border: 1px solid var(--color-prim);
 }
 
+/* Section */
 .section {
     padding: 5rem 0;
 }
 
+.section-title {
+    margin-bottom: 4.5rem;
+    text-align: center;
+}
+
 /* Nav */
 .navbar .nav-item .nav-link {
-    color: var(--color-text);
+    color: var(--color-dark);
 }
 
 .nav-link:hover,
@@ -83,4 +92,51 @@ body {
 /* About */
 .about-text {
     width: 85%;
+}
+
+/* Package */
+.package-card {
+    font-size: .9375rem;
+    transition: all .2s ease-out;
+}
+
+.package-price,
+.package-status,
+.package-features li i {
+    color: var(--color-sec);
+}
+
+.package-price {
+    font-size: 2.35rem;
+}
+
+.package-features li {
+    margin: .3rem 0;
+}   
+
+.package-features li i {
+    width: 1.5rem;
+}
+
+.package-btn {
+    background: var(--color-light);
+    font-size: 1rem;
+    border-radius: 3rem;
+    border: 1px solid var(--color-prim);
+    color: var(--color-prim);
+}
+
+.package-card.hot,
+.package-card:hover {
+    background: var(--color-prim);
+    color: var(--color-light);
+}
+
+.package-card.hot,
+.package-card:hover {
+    --color-sec: var(--color-light);
+}
+
+.package-badge {
+    font-size: .9375rem;
 }
